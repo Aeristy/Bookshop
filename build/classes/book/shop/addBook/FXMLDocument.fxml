@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="501.0" stylesheets="@addBook.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="book.shop.addBook.FXMLDocumentController">
+    <children>
+        <VBox prefHeight="449.0" prefWidth="550.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="tensach" prefHeight="58.0" prefWidth="462.0" promptText="Tên sách" stylesheets="@addBook.css">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thể loại">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ComboBox fx:id="danhmuc" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <TextField fx:id="theloaisach" prefHeight="54.0" prefWidth="462.0" promptText="Thể Loại" stylesheets="@addBook.css">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="tacgia" prefHeight="49.0" prefWidth="462.0" promptText="Tác giả" stylesheets="@addBook.css">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="nhaxuatban" prefHeight="50.0" prefWidth="462.0" promptText="Nhà Xuất Bản" stylesheets="@addBook.css">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="giasach" prefHeight="50.0" prefWidth="462.0" promptText="Giá sách" stylesheets="@addBook.css">
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="150.0" prefWidth="502.0">
+               <children>
+                  <Button fx:id="savebutton" mnemonicParsing="false" onAction="#addBook" prefHeight="70.0" prefWidth="174.0" text="Thêm" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelbutton" mnemonicParsing="false" onAction="#cancel" prefHeight="70.0" prefWidth="174.0" text="Hủy" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+    </children>
+</AnchorPane>
